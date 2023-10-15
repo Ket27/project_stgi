@@ -1,0 +1,58 @@
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 48%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    @page {
+      size: letter;
+      font-size: 0.8rem !important;
+      font-family: 'Source Sans Pro', Arial, Tahoma !important;
+
+      @bottom-right {
+        color: #023b66 !important;
+        font-weight: bold;
+        content: 'October 14, 2023';
+      }
+
+      @top-left {
+        color: #023b66 !important;
+        font-weight: bold;
+        content: 'page header';
+      }
+
+      @footnote {
+        white-space: nowrap;
+        border-top: 1px solid black;
+        margin-left: -1.25rem !important;
+        margin-right: -1.25rem !important;
+      }
+    }
+
+    .footnote {
+      float: footnote;
+      margin-bottom: 2mm;
+      -prince-float-reference: page;
+      footnote-display: inline;
+      color: black;
+    }
+
+    ::footnote-call {
+      vertical-align: super;
+      font-size: 70%;
+    }
+
+    ::footnote-marker {
+      margin-left: 5px;
+    }
